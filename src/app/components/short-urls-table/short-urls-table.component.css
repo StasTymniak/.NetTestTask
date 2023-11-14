@@ -1,0 +1,27 @@
+.roundBtn{
+    border: 1px solid;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+
+.info{background-color: rgb(44, 52, 209);}
+.danger{background-color: rgb(126, 13, 13);}
+
+.info:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(44, 52, 209);;
+    border-radius: 12px;
+}
+.danger:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(126, 13, 13);;
+    border-radius: 12px;
+}

@@ -1,0 +1,9 @@
+<div class="outer">
+    <div class="conteiner ">
+        <h3 class="font-weight-bold">Add new url</h3>
+        <form class="addUrlForm" [formGroup]="addUrlForm" >
+            <input formControlName="url" type="text" class="form-control" placeholder="Enter url">
+            <button (click)="addNewUrl()" type="submit" class="roundBtn">Add</button>
+        </form>
+    </div>
+</div>

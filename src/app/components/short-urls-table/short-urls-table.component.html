@@ -1,0 +1,23 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">id</th>
+            <th scope="col">Long url</th>
+            <th scope="col">Short url</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let url of urls; index as i" class="">
+            <th scope="row">{{i+1}}</th>
+            <td>{{url.id}}</td>
+            <td>{{url.longUrl}}</td>
+            <td>{{url.shortUrl}}</td>
+            <td><button (click)="infoClick(url.id)" class="roundBtn info" *ngIf="isLoggedIn">Info</button></td>
+            <td><button (click)="deleteClick(url.id)" class="roundBtn danger" *ngIf="(userName===url.createdBy || userRole==='admin') && isLoggedIn">Del</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<button (click)="refresh()" class="roundBtn info">refresh</button>

@@ -1,0 +1,17 @@
+
+<!-- <ul *ngFor="let url of urls; index as i">
+    <p>{{i+1}}:</p>
+    <li>Long url: {{url.longUrl}}</li>
+    <li>Shorted url:  {{url.shortUrl}}</li>
+</ul> -->
+<nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand m-2">{{userName}}</a>
+    <form class="form-inline">
+        <a class="aboutView" routerLink="/about">About</a>
+        <button (click)="logout()" class="btn btn-danger m-2" *ngIf="isLoggedIn">Log out</button>
+        <button (click)="logout()" class="btn btn-success m-2" *ngIf="!isLoggedIn">Sing in</button>
+    </form>
+</nav>
+<app-add-new-url *ngIf="isLoggedIn" ></app-add-new-url>
+<app-short-urls-table></app-short-urls-table>
+

@@ -1,0 +1,8 @@
+<p>Main step in my algorithm:</p>
+<ul>
+    <li>Take English alphabet and all digits "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"</li>
+    <li>Using Random get 8 chars and create randStr</li>
+    <li>Using HttpContext.Request.Scheme and HttpContext.Request.Host plus our randStr create shorten version of provided link</li>
+    <li>Map our shorten link and original link in database using Url model</li>
+    <li>When we want to use out shorten link, we will trigger HttpGet request which find our short link in database and redirect to original link </li>
+</ul>
